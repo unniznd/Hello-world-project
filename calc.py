@@ -34,6 +34,14 @@ def home():
 def name():
     return render_template('name.html',name="Arjun")
 
+# Please go through the html code
+# {{name}} in html code is replaced by value of parameter name in render_template
+# This is enabled by Jinja engine
+
+
+# Try to add custom route name as mentioned below
+# Going to "http://www.abc.com/arjun" to render arjuns template 
+# "/abhin" to render abhins template
 
 if __name__=='__main__':
     app.run(debug=True)
@@ -60,5 +68,5 @@ if __name__=='__main__':
 # Open the link showen in the line "Running on http://127.0.0.1:5000/""
 
 # To go to other routes use the route name, "http://127.0.0.1:5000/(add route name here)"
-# For example "http://127.0.0.1:5000/login"
+# For example "http://127.0.0.1:5000/name"
 
